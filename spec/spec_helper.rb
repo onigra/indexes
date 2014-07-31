@@ -1,6 +1,6 @@
-# require 'bundler/setup'
-# require 'coveralls'
-# Coveralls.wear!
-# Bundler.setup
+require 'bundler/setup'
+require 'coveralls'
+Coveralls.wear!
+Bundler.setup
 
 require 'indexes'
