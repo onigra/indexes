@@ -26,7 +26,7 @@ require 'indexes'
 
 #=> [[1, 2, 3], [1, 2]]
 
-["foo", "bar", "baz", "foo", "baz", "foo"].indexes "foo"
+["foo", "bar", "baz", "foo", "baz", "foo"].slice_indexes "foo"
 
 #=> [["foo", "bar", "baz"], ["foo", "baz"], ["foo"]]
 ```
