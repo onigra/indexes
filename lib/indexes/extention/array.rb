@@ -1,4 +1,4 @@
-module Enumerable
+class Array
 
   def indexes(item = nil)
     if block_given?
