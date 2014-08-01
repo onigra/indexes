@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/onigra/indexes.svg?branch=master)](https://travis-ci.org/onigra/indexes) [![Coverage Status](https://coveralls.io/repos/onigra/indexes/badge.png)](https://coveralls.io/r/onigra/indexes) [![Code Climate](https://codeclimate.com/github/onigra/indexes.png)](https://codeclimate.com/github/onigra/indexes)
+[![Build Status](https://travis-ci.org/onigra/slice_indexes.svg?branch=master)](https://travis-ci.org/onigra/slice_indexes) [![Coverage Status](https://coveralls.io/repos/onigra/slice_indexes/badge.png)](https://coveralls.io/r/onigra/slice_indexes) [![Code Climate](https://codeclimate.com/github/onigra/slice_indexes.png)](https://codeclimate.com/github/onigra/slice_indexes)
 
 
 # Usage
