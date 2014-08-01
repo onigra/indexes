@@ -1,12 +1,22 @@
-class Array
+module Enumerable
 
-  def indexes(item)
-    self.each_with_index.map { |obj, index| index if obj == item }.reject(&:nil?)
+  def indexes(item = nil)
+    if block_given?
+      self.each_with_index.map { |obj, index| index if yield(obj) }.reject(&:nil?)
+    else
+      self.each_with_index.map { |obj, index| index if obj == item }.reject(&:nil?)
+    end
   end
 
-  def slice_indexes(item)
+  def slice_indexes(item = nil)
     result = []
-    tmp = self.indexes item
+    tmp = nil
+
+    if block_given?
+      tmp = self.indexes { |i| yield(i) }
+    else
+      tmp = self.indexes item
+    end
 
     tmp.each_with_index do |obj, index|
       # indexが最後だったら

@@ -22,6 +22,18 @@ describe Array do
 
       it { should eq [0, 3, 5] }
     end
+
+    context 'case4' do
+      let(:ary) { ["foo", 1, 2, "foo", 3, "foo"] }
+
+      subject do
+        ary.indexes do |i|
+          i.class == String
+        end
+      end
+
+      it { should eq [0, 3, 5] }
+    end
   end
 
   describe '#slice_indexes' do
@@ -44,6 +56,18 @@ describe Array do
       subject { ary.slice_indexes "foo" }
 
       it { should eq [["foo", "bar", "baz"], ["foo", "baz"], ["foo"]] }
+    end
+
+    context 'case4' do
+      let(:ary) { ["foo", 1, 2, "foo", 3, "foo"] }
+
+      subject do
+        ary.slice_indexes do |i|
+          i.class == String
+        end
+      end
+
+      it { should eq [["foo", 1, 2], ["foo", 3], ["foo"]] }
     end
   end
 end
