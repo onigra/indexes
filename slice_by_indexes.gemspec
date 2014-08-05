@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = SliceByIndexes::VERSION
   spec.authors       = ["onigra"]
   spec.email         = ["3280467rec@gmail.com"]
-  spec.summary       = %q{}
-  spec.description   = %q{}
+  spec.summary       = %q{add Array#indexes and Array#slice_by_indexes}
+  spec.description   = %q{Array#index: returns the index list in array such that the object is == to obj. Array#slice_by_indexes: Array#slice by indexes.}
   spec.homepage      = "https://github.com/onigra/slice_by_indexes"
   spec.license       = "MIT"
 
