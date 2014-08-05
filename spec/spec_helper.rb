@@ -3,4 +3,4 @@ require 'coveralls'
 Coveralls.wear!
 Bundler.setup
 
-require 'slice_indexes'
+require 'slice_by_indexes'

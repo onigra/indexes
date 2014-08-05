@@ -8,7 +8,7 @@ class Array
     end
   end
 
-  def slice_indexes(item = nil)
+  def slice_by_indexes(item = nil)
     result = []
     tmp = nil
 

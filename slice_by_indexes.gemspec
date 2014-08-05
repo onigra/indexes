@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'slice_indexes/version'
+require 'slice_by_indexes/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "slice_indexes"
-  spec.version       = SliceIndexes::VERSION
+  spec.name          = "slice_by_indexes"
+  spec.version       = SliceByIndexes::VERSION
   spec.authors       = ["onigra"]
   spec.email         = ["3280467rec@gmail.com"]
   spec.summary       = %q{}
   spec.description   = %q{}
-  spec.homepage      = "https://github.com/onigra/slice_indexes"
+  spec.homepage      = "https://github.com/onigra/slice_by_indexes"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
