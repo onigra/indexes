@@ -27,7 +27,7 @@ $ gem install slice_by_indexes
 ## Array#indexes
 
 ```rb
-require 'indexes'
+require 'slice_by_indexes'
 
 [1, 2, 3, 1, 2].indexes 1
 
@@ -45,7 +45,7 @@ require 'indexes'
 ## Array#slice_by_indexes
 
 ```rb
-require 'indexes'
+require 'slice_by_indexes'
 
 [1, 2, 3, 1, 2].slice_by_indexes 1
 
