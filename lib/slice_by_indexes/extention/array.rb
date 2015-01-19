@@ -18,20 +18,22 @@ class Array
     end
 
     indexes.each_with_index do |item, i|
-      # indexが最後だったら
+      #
+      # indexが最後だったら、現在の位置から末尾までを取得
+      #
       if i == (indexes.size - 1)
-
-        # itemの位置から末尾までを取得
         result << self[item..(self.size - 1)]
       else
-
+        #
         # [1, 1]みたいに取得したい値(match_condition)の値が続いている場合
         # 取得したindexが連番になっているはず
+        #
+        # その場合は現在の値を取得
+        # そうでない場合、現在の位置から次の一致条件の値までを取得
+        #
         if indexes[i + 1] - item == 1
           result << [self[item]]
         else
-
-          # itemの位置から次のindex - 1までを取得
           result << self[item..(indexes[i + 1] - 1)]
         end
       end
