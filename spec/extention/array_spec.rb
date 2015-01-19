@@ -34,6 +34,13 @@ describe Array do
 
       it { should eq [0, 3, 5] }
     end
+
+    context 'case5' do
+      let(:ary) { ["foo", 1, 2, "foo", 3, "foo"] }
+      subject { ary.indexes }
+
+      it { should eq [] }
+    end
   end
 
   describe '#slice_by_indexes' do
@@ -68,6 +75,13 @@ describe Array do
       end
 
       it { should eq [["foo", 1, 2], ["foo", 3], ["foo"]] }
+    end
+
+    context 'case5' do
+      let(:ary) { ["foo", 1, 2, "foo", 3, "foo"] }
+      subject { ary.slice_by_indexes }
+
+      it { should eq [] }
     end
   end
 end
